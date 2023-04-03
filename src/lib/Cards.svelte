@@ -68,18 +68,35 @@
 {/each}
 
 <style>
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  li:not(:first-child) {
+    border-left: 1px solid grey;
+  }
+
   .card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
+    padding-bottom: 10px;
   }
 
   .card img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -91,6 +108,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    color: white;
   }
 </style>
