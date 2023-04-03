@@ -61,6 +61,11 @@
         <div class="cardtext">
           <h2>{project.name}</h2>
           <p>{project.description}</p>
+          <ul>
+            {#each project.technologies as tech}
+              <li>{tech}</li>
+            {/each}
+          </ul>
           <a href={project.source}>Source</a>
         </div>
       </div>
